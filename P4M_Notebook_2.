@@ -21,7 +21,8 @@
     },
     "colab": {
       "name": "P4M_Notebook2.ipynb",
-      "provenance": []
+      "provenance": [],
+      "toc_visible": true
     }
   },
   "cells": [
@@ -459,7 +460,7 @@
         "id": "WI4b7-z6uXdp",
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 283
+          "height": 266
         },
         "outputId": "bc26bb94-5261-4cff-cc9a-e39464482f26"
       },
@@ -968,7 +969,24 @@
         "  S=abs(x)\n",
         "\n",
         "  return S\n",
-        "2. \n",
+        "2. def is_prime(n):\n",
+        "\n",
+        "    for j in range(2,n):  # the list of numbers 2,3,...,n-1.\n",
+        "\n",
+        "        if n%j == 0:  # is n divisible by j?\n",
+        "\n",
+        "            print(\"{} is a factor of {}.\".format(j,n))\n",
+        "\n",
+        "            return False\n",
+        "\n",
+        "    return True\n",
+        "\n",
+        "    if n>=1000000 == 0:\n",
+        "\n",
+        "      print('Number too big')\n",
+        "\n",
+        "      return None\n",
+        "      \n",
         "3. \n",
         "4. def sum_of_squares(n):\n",
         "\n",
@@ -998,11 +1016,30 @@
         "\n",
         "sum_of_squares(1000)\n",
         "\n",
-        "5. "
+        "5. Yes the $\\lim_{n \\rightarrow \\infty} \\gamma(n)$ can be proven to exist using the fact that the harmonic series $\\frac{1}{1} + \\frac{1}{2} + \\frac{1}{3} + \\cdots + \\frac{1}{n}$ converges to the natural logarithm log(n) as $n \\rightarrow \\infty$."
       ],
       "metadata": {
         "id": "xEkuV92vrC5Q"
       }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def is_prime(n):\n",
+        "    for j in range(2,n):  # the list of numbers 2,3,...,n-1.\n",
+        "        if n%j == 0:  # is n divisible by j?\n",
+        "            print(\"{} is a factor of {}.\".format(j,n))\n",
+        "            return False\n",
+        "    return True\n",
+        "    if n>=1000000 == 0:\n",
+        "      print('Number too big')\n",
+        "      return None"
+      ],
+      "metadata": {
+        "id": "viV8tYCX1nGH"
+      },
+      "execution_count": 15,
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -1037,11 +1074,11 @@
         "sum_of_squares(1000)"
       ],
       "metadata": {
-        "id": "pq1iMPEnwA0r",
-        "outputId": "49b5d79f-7569-4b21-ed22-e7508ee994e7",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "pq1iMPEnwA0r",
+        "outputId": "49b5d79f-7569-4b21-ed22-e7508ee994e7"
       },
       "execution_count": 14,
       "outputs": [
@@ -1433,7 +1470,7 @@
         "id": "DpBaST5WuXdu",
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 300
+          "height": 283
         },
         "outputId": "0f2bc1cd-48fe-4be2-bc42-7b89ab94fc22"
       },
